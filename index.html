@@ -39,7 +39,6 @@ header {
   }
 }
 .logo {
-  width: 3rem;
   aspect-ratio: 1;
   margin: 1rem;
   transform: rotate(20deg);
@@ -50,11 +49,11 @@ header {
   min-width: 3rem;
 }
 @keyframes blink {
-  0% { background-image: url(logo.svg); }
-  79% { background-image: url(logo.svg); }
+  0% { background-image: url(logo.svg), url(logo.svg); }
+  79% { background-image: url(logo.svg), url(logo.svg); }
   80% { background-image: url(blink.svg), url(logo.svg); }
   99% { background-image: url(blink.svg), url(logo.svg); }
-  100% { background-image: url(logo.svg); }
+  100% { background-image: url(logo.svg), url(logo.svg); }
 }
 h1, h2, h3 {
   font-family: Boogaloo;
